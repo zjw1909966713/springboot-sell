@@ -20,6 +20,7 @@ public class WechatMpConfig {
 
     @Bean
     public WxMpService wxMpService() {
+
         WxMpService wxMpService = new WxMpServiceImpl();
         wxMpService.setWxMpConfigStorage(wxMpConfigStorage());
         return wxMpService;
